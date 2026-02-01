@@ -1,8 +1,8 @@
-# 📊 Sorting Algorithms Comparison
+# Sorting Algorithms Comparison
 
 This project implements and compares 4 sorting algorithms on different datasets.
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Generate Datasets (if not exist)
 ```bash
@@ -32,7 +32,7 @@ Then enter file path when prompted.
 - **4** - NumPy Sort
 - **5** - Run All (Compare all algorithms)
 
-## 📈 Example Results
+## Example Results
 
 ### Test 1: Float Ascending (1M numbers)
 ```
@@ -52,26 +52,16 @@ NumPy Sort   | Time:   358.55 ms
 Fastest: NumPy Sort (358.55 ms)
 ```
 
-## 📝 Notes
+## Notes
 
 - **Option 5** creates a fresh copy of data for each algorithm to ensure fair timing
 - All algorithms are iterative (not recursive) to avoid stack overflow
 - Quick Sort uses Hoare partition scheme
 - Dataset seed is fixed (42) for reproducibility
 
-## 📂 Files
+## Files
 
 - `sorting_menu.py` - Main program with all 4 sorting algorithms
 - `dataset_creating.py` - Dataset generator
 - `sort_utils.py` - Utility functions for reading data
 - `datasets/` - Generated datasets folder
-
-## 🎯 Assignment Requirements
-
-✅ 10 sequences (~1M numbers each)  
-✅ Sequence 1: Float ascending  
-✅ Sequence 2: Float descending  
-✅ Sequences 3-5: Float random  
-✅ Sequences 6-10: Integer random  
-✅ 4 sorting algorithms implemented  
-✅ Comparison mode available  
