@@ -5,7 +5,7 @@ This project implements and compares 4 sorting algorithms on different datasets.
 ##  Quick Start
 
 ### 1. Generate Datasets (if not exist)
-```bash
+```
 python dataset_creating.py
 ```
 This creates 10 sequences in `datasets/` folder:
@@ -15,12 +15,12 @@ This creates 10 sequences in `datasets/` folder:
 - `seq06-10_int_rand.txt` - Integer random (5 sequences)
 
 ### 2. Run Sorting Menu
-```bash
+```
 python sorting_menu.py datasets/seq06_int_rand.txt
 ```
 
 Or run without file argument:
-```bash
+```
 python sorting_menu.py
 ```
 Then enter file path when prompted.
@@ -65,3 +65,4 @@ Fastest: NumPy Sort (358.55 ms)
 - `dataset_creating.py` - Dataset generator
 - `sort_utils.py` - Utility functions for reading data
 - `datasets/` - Generated datasets folder
+
