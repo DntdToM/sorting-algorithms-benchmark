@@ -1,5 +1,8 @@
 import sys
 import time
+
+import numpy as np
+
 from sort_utils import read_numbers
 
 """
@@ -60,7 +63,7 @@ def heapsort(arr):
 def mergesort(arr):
     """
     Merge Sort algorithm (iterative).
-    Time complexity: O(n log n)
+    Time complexity: O(nlogn)
     
     Args:
         arr: Array to sort (in-place)
@@ -109,7 +112,7 @@ def mergesort(arr):
 def quicksort(arr):
     """
     Quick Sort algorithm (iterative).
-    Time complexity: O(n log n) average, O(n²) worst case
+    Time complexity: O(nlogn) average, O(n^2) worst case
     
     Args:
         arr: Array to sort (in-place)
@@ -146,7 +149,7 @@ def quicksort(arr):
 def numpy_sort(arr):
     """
     Sort using NumPy library.
-    Time complexity: O(n log n) - quicksort/mergesort hybrid
+    Time complexity: O(nlogn) - quicksort/mergesort hybrid
     
     Args:
         arr: Array to sort
@@ -154,11 +157,6 @@ def numpy_sort(arr):
     Returns:
         Sorted array or None if NumPy not available
     """
-    try:
-        import numpy as np
-    except ImportError:
-        print("Need numpy: pip install numpy")
-        return None
     
     return np.sort(arr)
 
